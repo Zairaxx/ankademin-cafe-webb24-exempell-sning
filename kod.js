@@ -8,7 +8,7 @@ let slogan = document.querySelector("#slogan");
 slogan.innerText = "Stockholms no.1 coding café!"
 
 document.body.style.background = "pink";
-
+// Vi kan använda getElementsByClassName, men då kan vi ej loopa igenom med .forEach .
 // let prices1 = document.getElementsByClassName("pris");
 
 let prices = document.querySelectorAll(".pris")
@@ -25,10 +25,12 @@ console.log(frukostMacka);
 
 let products = document.querySelectorAll(".produkt");
 
+
+//Alternativ 1
 products[3].innerHTML = "Pannkakor - <span class='pris'> 139kr</span>"
 
 
-// Alternativ 2
+// Alternativ 2 - Med createElement + append
 // let span = document.createElement("span");
 // span.classList.add("pris");
 // span.innerText = "139kr"
