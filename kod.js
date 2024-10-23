@@ -36,3 +36,17 @@ products[3].innerHTML = "Pannkakor - <span class='pris'> 139kr</span>"
 // products[3].innerText = "Pannkakor -"
 // products[3].append(span);
 
+let openingHours = document.createElement("h3");
+
+openingHours.innerText = "Öppettider: Alla dagar kl 18-21"
+
+let website = document.querySelector("#website");
+
+let welcomeText = document.createElement("p");
+welcomeText.innerText = "Till Ankademin Café är alla välkomna att sitta och koda och ta en mysig fika!"
+
+website.append(openingHours,welcomeText);
+
+let paragraphs = document.querySelectorAll("p");
+
+paragraphs.forEach((p) => { p.style.color="darkred"})
